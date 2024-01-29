@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>{% block title %} {% endblock title %}</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    {% block style %} {% endblock style %}
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="static/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="static/assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="static/assets/vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="static/assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="static/assets/vendor/aos/aos.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="static/assets/css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <a href="/" class="scrollto">Farm Management</a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Intro Section ======= -->
+    <section id="intro">
+      <div class="intro-container" data-aos="zoom-in" data-aos-delay="100">
+        {% block content %} {% endblock content %}
+      </div>
+    </section>
+    <!-- End Intro Section -->
+
+    <div class="main">
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+        <!-- <div class="footer-top" style="background-color: #d93636; color: #fff;padding-top: 19px;"> -->
+        <div
+          class="footer-top"
+          style="background-color: #5cb85c; color: #fff; padding-top: 19px"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-info">
+                  <h3>Farm Management System</h3>
+                  <p>
+                    The main aim of our project is to empower farmers by
+                    providing a platform to share knowledge and facilitate
+                    online transactions for agricultural products.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-links">
+                  <h4>Quick Links</h4>
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/register">Farmer Register</a></li>
+                    <li><a href="/addfarming">Add Farming</a></li>
+                    <li><a href="/farmerdetails">Farmer Details</a></li>
+                    <li><a href="/agroproducts">Agro Products</a></li>
+                    <li><a href="/triggers">Records</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-contact">
+                  <h4>Contact Us</h4>
+                  <p>
+                    Wagholi<br />
+                    Pune, India<br />
+                    Email: takawanepranil22@gmail.com<br />
+                    Phone: +91 9699532910
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="social-links">
+            <a href="#" class="instagram m-2"
+              ><i
+                class="fa fa-instagram"
+                style="color: #fff; font-size: 30px"
+              ></i
+            ></a>
+            <a href="#" class="linkedin"
+              ><i
+                class="fa fa-linkedin"
+                style="color: #fff; font-size: 30px"
+              ></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="container d-md-flex pt-4">
+          <div class="mr-md-auto text-center text-md-left">
+            <p>
+              &copy; 2024 Farm Management System | Designed by
+              <code class="text-dark fw-bolder" style="font-size: 18px;">Pranil Takawane</code>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- End  Footer -->
+
+      <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+      <!-- Vendor JS Files -->
+      <script src="static/assets/vendor/jquery/jquery.min.js"></script>
+      <script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+      <script src="static/assets/vendor/php-email-form/validate.js"></script>
+      <script src="static/assets/vendor/venobox/venobox.min.js"></script>
+      <script src="static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+      <script src="static/assets/vendor/superfish/superfish.min.js"></script>
+      <script src="static/assets/vendor/hoverIntent/hoverIntent.js"></script>
+      <script src="static/assets/vendor/aos/aos.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="static/assets/js/main.js"></script>
+    </div>
+  </body>
+</html>

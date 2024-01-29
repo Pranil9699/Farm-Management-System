@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Add Farming
+{% endblock title %}
+
+{% block body %}
+    <div class="container pt-5 ">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <div class="card bg-light mb-3">
+                    <h3 class="card-header bg-success text-white text-center">Add Farming</h3>
+                    <div class="card-body p-4">
+                        <form action="/addfarming" method="post">
+                            <div class="form-group">
+                                <label for="dept" class="font-weight-bold">Enter Farming Type</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="farming"
+                                    id="farming"
+                                    placeholder="E.g., Organic Farming"
+                                    required
+                                />
+                            </div>
+                            <br />
+                            <button type="submit" class="btn btn-success btn-sm btn-block">Add Farming</button>
+                        </form>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+{% endblock body %}
